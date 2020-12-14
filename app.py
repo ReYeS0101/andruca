@@ -8,10 +8,10 @@ ENV = 'dev'
 
 if ENV == 'prod':
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Kaled.2021@localhost/Andruca'
+    app.config['SQLALCHEMY_DATABASE_URI'] = ''
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://yshdmhratwnolz:ddb4f05d09a29b1f99bb551a8d4ea25938177707a0452de7d3b886fa18bc576b@ec2-3-215-83-17.compute-1.amazonaws.com:5432/d8p0png9t0bsrf'
+    app.config['SQLALCHEMY_DATABASE_URI'] = ''
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
